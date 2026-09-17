@@ -1,0 +1,7 @@
+[2026-09-17T00:51:07Z] === AST ITERATION 1 START | repo=NVIDIA/NeMo-Relay sha=50f377b3 ===
+[2026-09-17T00:51:07Z] [iter=1] PHASE START: ast repo=NVIDIA/NeMo-Relay sha=50f377b3
+[2026-09-17T00:51:07Z] [iter=1] Building AST aggregate chunks
+[2026-09-17T01:20:53Z] [iter=1] AST chunks built count=4 triples=20902931
+[2026-09-17T01:20:53Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/50f377b3052df3e3394d87f3f1a3ccb251bcab12/.complete
+[2026-09-17T01:20:53Z] [iter=1] PHASE END: ast elapsed_s=1786 elapsed_min=29.8
+[2026-09-17T01:20:53Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json

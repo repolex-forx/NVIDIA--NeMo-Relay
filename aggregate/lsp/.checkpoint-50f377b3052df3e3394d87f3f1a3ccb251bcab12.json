@@ -2,21 +2,29 @@
   "commit_sha": "50f377b3052df3e3394d87f3f1a3ccb251bcab12",
   "completed_files": [
     "crates/adaptive/src/plugin_component.rs",
+    "crates/adaptive/src/response_cache/key.rs",
     "crates/adaptive/tests/integration/runtime_integration_tests.rs",
     "crates/adaptive/tests/unit/trie/builder_tests.rs",
+    "crates/cli/src/agents/mod.rs",
+    "crates/cli/src/bootstrap/state.rs",
     "crates/cli/src/daemon/common/socket.rs",
+    "crates/cli/src/installation/marketplace/mod.rs",
     "crates/cli/tests/coverage/agents/launcher_tests.rs",
     "crates/cli/tests/coverage/agents/plugin_install_tests.rs",
+    "crates/cli/tests/coverage/shared/config_tests.rs",
     "crates/cli/tests/coverage/shared/server_tests.rs",
     "crates/core/src/codec/openai_chat.rs",
     "crates/core/src/observability/openinference.rs",
+    "crates/core/src/observability/otel_logs.rs",
+    "crates/core/src/plugin/dynamic/native.rs",
     "crates/core/tests/integration/worker_plugin_tests.rs",
     "crates/core/tests/unit/codec/gemini_generate_content_tests.rs",
     "crates/core/tests/unit/llm_api_tests.rs",
     "crates/core/tests/unit/observability/otel_tests.rs",
     "crates/core/tests/unit/observability/plugin_component_tests.rs",
     "crates/ffi/tests/unit/types_tests.rs",
-    "crates/plugin/tests/typed_callbacks.rs"
+    "crates/plugin/tests/typed_callbacks.rs",
+    "crates/python/src/py_types/mod.rs"
   ],
   "completed_types": [],
   "stats": {
@@ -24,13 +32,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/50f377b3052df3e3394d87f3f1a3ccb251bcab12.nq.gz",
     "call_sites": 235797,
     "import_statements": 0,
-    "call_targets_resolved": 17259,
+    "call_targets_resolved": 21295,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 7934,
+    "errors": 9818,
     "extends_clauses": 1,
     "implements_clauses": 207,
     "import_modules_denormalized": 0,
@@ -38,5 +46,5 @@
     "extends_class_denormalized": 0,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14409
+  "elapsed_seconds": 14406
 }

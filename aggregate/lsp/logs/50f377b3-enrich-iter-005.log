@@ -1,0 +1,24 @@
+[2026-09-17T19:25:28Z] === ENRICH ITERATION 5 START | repo=NVIDIA/NeMo-Relay sha=50f377b3 ===
+[2026-09-17T19:25:28Z] [iter=5] PHASE START: enrich repo=NVIDIA/NeMo-Relay sha=50f377b3 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/50f377b3-enrich-iter-005.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/50f377b3052df3e3394d87f3f1a3ccb251bcab12.nq.gz
+[2026-09-17T19:25:48Z] [iter=5] Step 1: Loading AST into disk-backed store mem_mb=83 MB
+[2026-09-17T19:31:54Z] [iter=5] AST store loaded triples=20902930 load_secs=358 mem_mb=1138 MB
+[2026-09-17T19:31:54Z] [iter=5] Step 2: Finding LSP targets mem_mb=1138 MB
+[2026-09-17T19:32:28Z] [iter=5] LSP targets found call_sites=235797 imports=0 extends=1 implements=207 secs=34
+[2026-09-17T19:32:33Z] [iter=5] Loaded checkpoint partial graph triples=155548
+[2026-09-17T19:32:50Z] [iter=5] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1138 MB
+[2026-09-17T19:34:33Z] [iter=5] Position index built positions=1396491 nodes_with_types=1768633 secs=103 mem_mb=3564 MB
+[2026-09-17T19:34:33Z] [iter=5] Step 3: Starting LSP resolution mem_mb=3564 MB already_completed_types=[] already_completed_files=16
+[2026-09-17T19:34:33Z] [iter=5] Resolving target type target_type=call_site count=235797
+[2026-09-17T19:35:26Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=10.0 files_done=0 resolved=0 errors=0 current=crates/core/src/plugin/dynamic/native.rs
+[2026-09-17T21:22:29Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=117.0 files_done=1 resolved=271 errors=870 current=crates/cli/src/bootstrap/state.rs
+[2026-09-17T21:29:13Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=123.8 files_done=2 resolved=448 errors=925 current=crates/cli/src/agents/mod.rs
+[2026-09-17T21:45:13Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=139.8 files_done=3 resolved=583 errors=1057 current=crates/cli/tests/coverage/shared/config_tests.rs
+[2026-09-17T22:20:40Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=175.2 files_done=4 resolved=2817 errors=1348 current=crates/python/src/py_types/mod.rs
+[2026-09-17T22:21:25Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=175.9 files_done=5 resolved=2850 errors=1354 current=crates/core/src/observability/otel_logs.rs
+[2026-09-17T22:33:42Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=188.2 files_done=6 resolved=3108 errors=1455 current=crates/cli/src/installation/marketplace/mod.rs
+[2026-09-17T23:17:10Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=231.7 files_done=7 resolved=3764 errors=1815 current=crates/adaptive/src/response_cache/key.rs
+[2026-09-17T23:23:09Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=237.7 files_done=8 resolved=3972 errors=1864 current=crates/python/tests/coverage/py_types_coverage_tests.rs
+[2026-09-17T23:25:34Z] [iter=5] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=24 new_files_this_iter=8 mem_mb=3595 MB
+[2026-09-17T23:25:34Z] [iter=5] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/50f377b3052df3e3394d87f3f1a3ccb251bcab12.nq.gz triples=191024
+[2026-09-17T23:25:39Z] [iter=5] Checkpoint written, exiting with code 7
+[2026-09-17T23:25:39Z] [iter=5] PHASE END: enrich (checkpointed) elapsed_s=14407 elapsed_min=240.1 files_completed=24

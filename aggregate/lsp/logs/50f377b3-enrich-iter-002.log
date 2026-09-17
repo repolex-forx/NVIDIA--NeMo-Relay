@@ -1,0 +1,19 @@
+[2026-09-17T06:01:39Z] === ENRICH ITERATION 2 START | repo=NVIDIA/NeMo-Relay sha=50f377b3 ===
+[2026-09-17T06:01:39Z] [iter=2] PHASE START: enrich repo=NVIDIA/NeMo-Relay sha=50f377b3 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/50f377b3-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/50f377b3052df3e3394d87f3f1a3ccb251bcab12.nq.gz
+[2026-09-17T06:01:56Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=83 MB
+[2026-09-17T06:06:18Z] [iter=2] AST store loaded triples=20902930 load_secs=253 mem_mb=1128 MB
+[2026-09-17T06:06:18Z] [iter=2] Step 2: Finding LSP targets mem_mb=1128 MB
+[2026-09-17T06:07:04Z] [iter=2] LSP targets found call_sites=235797 imports=0 extends=1 implements=207 secs=46
+[2026-09-17T06:07:06Z] [iter=2] Loaded checkpoint partial graph triples=48751
+[2026-09-17T06:07:27Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1128 MB
+[2026-09-17T06:10:05Z] [iter=2] Position index built positions=1396491 nodes_with_types=1768633 secs=158 mem_mb=3403 MB
+[2026-09-17T06:10:05Z] [iter=2] Step 3: Starting LSP resolution mem_mb=3403 MB already_completed_types=[] already_completed_files=3
+[2026-09-17T06:10:05Z] [iter=2] Resolving target type target_type=call_site count=235797
+[2026-09-17T06:11:10Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=9.5 files_done=0 resolved=0 errors=0 current=crates/cli/tests/coverage/agents/plugin_install_tests.rs
+[2026-09-17T09:01:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=180.1 files_done=1 resolved=334 errors=1142 current=crates/ffi/tests/unit/types_tests.rs
+[2026-09-17T09:16:40Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=195.0 files_done=2 resolved=589 errors=1242 current=crates/adaptive/tests/unit/trie/builder_tests.rs
+[2026-09-17T09:29:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=207.9 files_done=3 resolved=693 errors=1329 current=crates/core/tests/integration/worker_plugin_tests.rs
+[2026-09-17T10:01:48Z] [iter=2] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=6 new_files_this_iter=3 mem_mb=3449 MB
+[2026-09-17T10:01:48Z] [iter=2] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/50f377b3052df3e3394d87f3f1a3ccb251bcab12.nq.gz triples=60104
+[2026-09-17T10:01:49Z] [iter=2] Checkpoint written, exiting with code 7
+[2026-09-17T10:01:49Z] [iter=2] PHASE END: enrich (checkpointed) elapsed_s=14409 elapsed_min=240.1 files_completed=6

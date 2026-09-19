@@ -21,6 +21,7 @@
     "crates/cli/src/plugins/pricing.rs",
     "crates/cli/tests/cli_tests.rs",
     "crates/cli/tests/coverage/agents/launcher_tests.rs",
+    "crates/cli/tests/coverage/agents/pi_doctor_tests.rs",
     "crates/cli/tests/coverage/agents/plugin_install_tests.rs",
     "crates/cli/tests/coverage/daemon/server_tests.rs",
     "crates/cli/tests/coverage/daemon/worker_managed_tests.rs",
@@ -40,6 +41,7 @@
     "crates/core/src/plugin/dynamic/worker.rs",
     "crates/core/src/plugins/nemo_guardrails/python.rs",
     "crates/core/tests/integration/codec_tests.rs",
+    "crates/core/tests/integration/middleware_tests.rs",
     "crates/core/tests/integration/native_plugin_tests.rs",
     "crates/core/tests/integration/subscriber_dispatcher_tests.rs",
     "crates/core/tests/integration/worker_plugin_tests.rs",
@@ -47,6 +49,7 @@
     "crates/core/tests/unit/codec/gemini_generate_content_tests.rs",
     "crates/core/tests/unit/codec/response_tests.rs",
     "crates/core/tests/unit/context_tests.rs",
+    "crates/core/tests/unit/dynamic_worker_tests.rs",
     "crates/core/tests/unit/llm_api_tests.rs",
     "crates/core/tests/unit/observability/atof_tests.rs",
     "crates/core/tests/unit/observability/openinference_tests.rs",
@@ -71,13 +74,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/50f377b3052df3e3394d87f3f1a3ccb251bcab12.nq.gz",
     "call_sites": 235797,
     "import_statements": 0,
-    "call_targets_resolved": 47030,
+    "call_targets_resolved": 49812,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 19798,
+    "errors": 21337,
     "extends_clauses": 1,
     "implements_clauses": 207,
     "import_modules_denormalized": 0,
@@ -85,5 +88,5 @@
     "extends_class_denormalized": 0,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14402
+  "elapsed_seconds": 14405
 }

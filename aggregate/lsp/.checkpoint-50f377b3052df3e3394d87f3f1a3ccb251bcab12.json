@@ -22,6 +22,7 @@
     "crates/cli/tests/coverage/daemon/worker_runtime_tests.rs",
     "crates/cli/tests/coverage/shared/config_tests.rs",
     "crates/cli/tests/coverage/shared/gateway_tests.rs",
+    "crates/cli/tests/coverage/shared/plugins_tests.rs",
     "crates/cli/tests/coverage/shared/server_tests.rs",
     "crates/core/src/codec/openai_chat.rs",
     "crates/core/src/codec/openai_responses.rs",
@@ -37,6 +38,7 @@
     "crates/core/tests/unit/codec/response_tests.rs",
     "crates/core/tests/unit/llm_api_tests.rs",
     "crates/core/tests/unit/observability/atof_tests.rs",
+    "crates/core/tests/unit/observability/openinference_tests.rs",
     "crates/core/tests/unit/observability/otel_tests.rs",
     "crates/core/tests/unit/observability/plugin_component_tests.rs",
     "crates/core/tests/unit/plugins/nemo_guardrails/local_python_tests.rs",
@@ -55,13 +57,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/50f377b3052df3e3394d87f3f1a3ccb251bcab12.nq.gz",
     "call_sites": 235797,
     "import_statements": 0,
-    "call_targets_resolved": 32214,
+    "call_targets_resolved": 34884,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 14838,
+    "errors": 16407,
     "extends_clauses": 1,
     "implements_clauses": 207,
     "import_modules_denormalized": 0,
@@ -69,5 +71,5 @@
     "extends_class_denormalized": 0,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14402
+  "elapsed_seconds": 14405
 }

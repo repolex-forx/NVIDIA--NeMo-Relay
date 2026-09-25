@@ -1,6 +1,7 @@
 {
   "commit_sha": "50f377b3052df3e3394d87f3f1a3ccb251bcab12",
   "completed_files": [
+    "crates/adaptive/src/acg/economics.rs",
     "crates/adaptive/src/plugin_component.rs",
     "crates/adaptive/src/redis.rs",
     "crates/adaptive/src/response_cache/key.rs",
@@ -15,6 +16,7 @@
     "crates/adaptive/tests/unit/drain_tests.rs",
     "crates/adaptive/tests/unit/plugin_component_tests.rs",
     "crates/adaptive/tests/unit/redis_tests.rs",
+    "crates/adaptive/tests/unit/response_cache/key_tests.rs",
     "crates/adaptive/tests/unit/storage_tests.rs",
     "crates/adaptive/tests/unit/trie/builder_tests.rs",
     "crates/cli/src/agents/codex/app_server.rs",
@@ -50,6 +52,7 @@
     "crates/cli/tests/coverage/agents/plugin_host_tests.rs",
     "crates/cli/tests/coverage/agents/plugin_install_tests.rs",
     "crates/cli/tests/coverage/daemon/control_tests.rs",
+    "crates/cli/tests/coverage/daemon/daemon_worker_e2e_tests.rs",
     "crates/cli/tests/coverage/daemon/mcp_tests.rs",
     "crates/cli/tests/coverage/daemon/server_tests.rs",
     "crates/cli/tests/coverage/daemon/socket_tests.rs",
@@ -57,6 +60,7 @@
     "crates/cli/tests/coverage/daemon/transport_tests.rs",
     "crates/cli/tests/coverage/daemon/worker_managed_tests.rs",
     "crates/cli/tests/coverage/daemon/worker_runtime_tests.rs",
+    "crates/cli/tests/coverage/shared/bootstrap_tests.rs",
     "crates/cli/tests/coverage/shared/config_tests.rs",
     "crates/cli/tests/coverage/shared/doctor_tests.rs",
     "crates/cli/tests/coverage/shared/file_io_tests.rs",
@@ -70,6 +74,8 @@
     "crates/cli/tests/coverage/shared/setup_tests.rs",
     "crates/core/src/api/llm.rs",
     "crates/core/src/api/optimization.rs",
+    "crates/core/src/api/runtime/subscriber_dispatcher.rs",
+    "crates/core/src/api/tool.rs",
     "crates/core/src/codec/gemini_generate_content.rs",
     "crates/core/src/codec/openai_chat.rs",
     "crates/core/src/codec/openai_responses.rs",
@@ -84,6 +90,7 @@
     "crates/core/src/plugin/dynamic/registry.rs",
     "crates/core/src/plugin/dynamic/worker.rs",
     "crates/core/src/plugins/nemo_guardrails/python.rs",
+    "crates/core/tests/coverage/logging_tests.rs",
     "crates/core/tests/integration/api_surface_tests.rs",
     "crates/core/tests/integration/codec_tests.rs",
     "crates/core/tests/integration/middleware_tests.rs",
@@ -120,6 +127,7 @@
     "crates/ffi/src/error.rs",
     "crates/ffi/src/types/mod.rs",
     "crates/ffi/tests/support/plugin_host.rs",
+    "crates/ffi/tests/unit/api/coverage_sweeps_tests.rs",
     "crates/ffi/tests/unit/api/registry_tests.rs",
     "crates/ffi/tests/unit/types_tests.rs",
     "crates/node/src/api/mod.rs",
@@ -146,6 +154,7 @@
     "crates/worker/tests/worker_sdk_tests.rs",
     "examples/language-binding-plugin/rust/tests/plugin.rs",
     "examples/rust-native-plugin/src/requests.rs",
+    "scripts/latency_benchmark/daemon_transport/src/client.rs",
     "scripts/latency_benchmark/daemon_transport/src/orchestrate.rs"
   ],
   "completed_types": [],
@@ -154,13 +163,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/50f377b3052df3e3394d87f3f1a3ccb251bcab12.nq.gz",
     "call_sites": 235797,
     "import_statements": 0,
-    "call_targets_resolved": 87222,
+    "call_targets_resolved": 90071,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 45577,
+    "errors": 47177,
     "extends_clauses": 1,
     "implements_clauses": 207,
     "import_modules_denormalized": 0,
@@ -168,5 +177,5 @@
     "extends_class_denormalized": 0,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14402
+  "elapsed_seconds": 14412
 }

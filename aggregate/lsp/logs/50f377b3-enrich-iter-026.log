@@ -1,0 +1,29 @@
+[2026-09-25T07:11:25Z] === ENRICH ITERATION 26 START | repo=NVIDIA/NeMo-Relay sha=50f377b3 ===
+[2026-09-25T07:11:25Z] [iter=26] PHASE START: enrich repo=NVIDIA/NeMo-Relay sha=50f377b3 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/50f377b3-enrich-iter-026.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/50f377b3052df3e3394d87f3f1a3ccb251bcab12.nq.gz
+[2026-09-25T07:11:43Z] [iter=26] Step 1: Loading AST into disk-backed store mem_mb=82 MB
+[2026-09-25T07:15:48Z] [iter=26] AST store loaded triples=20902930 load_secs=236 mem_mb=1136 MB
+[2026-09-25T07:15:48Z] [iter=26] Step 2: Finding LSP targets mem_mb=1136 MB
+[2026-09-25T07:16:27Z] [iter=26] LSP targets found call_sites=235797 imports=0 extends=1 implements=207 secs=40
+[2026-09-25T07:17:00Z] [iter=26] Loaded checkpoint partial graph triples=735205
+[2026-09-25T07:17:19Z] [iter=26] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=2195 MB
+[2026-09-25T07:19:31Z] [iter=26] Position index built positions=1396491 nodes_with_types=1768633 secs=132 mem_mb=4673 MB
+[2026-09-25T07:19:31Z] [iter=26] Step 3: Starting LSP resolution mem_mb=4673 MB already_completed_types=[] already_completed_files=133
+[2026-09-25T07:19:31Z] [iter=26] Resolving target type target_type=call_site count=235797
+[2026-09-25T07:20:35Z] [iter=26] HEARTBEAT target_type=call_site elapsed_min=9.2 files_done=0 resolved=0 errors=0 current=crates/cli/tests/coverage/daemon/mcp_tests.rs
+[2026-09-25T07:25:02Z] [iter=26] HEARTBEAT target_type=call_site elapsed_min=13.6 files_done=1 resolved=139 errors=20 current=crates/ffi/tests/support/plugin_host.rs
+[2026-09-25T07:26:57Z] [iter=26] HEARTBEAT target_type=call_site elapsed_min=15.5 files_done=2 resolved=195 errors=33 current=crates/cli/src/diagnostics/mod.rs
+[2026-09-25T07:46:44Z] [iter=26] HEARTBEAT target_type=call_site elapsed_min=35.3 files_done=3 resolved=673 errors=166 current=crates/core/tests/unit/plugin_dynamic_policy_tests.rs
+[2026-09-25T07:47:28Z] [iter=26] HEARTBEAT target_type=call_site elapsed_min=36.1 files_done=4 resolved=686 errors=171 current=crates/core/src/plugin/dynamic/registry.rs
+[2026-09-25T07:52:49Z] [iter=26] HEARTBEAT target_type=call_site elapsed_min=41.4 files_done=5 resolved=773 errors=207 current=crates/cli/src/process/supervision/unix.rs
+[2026-09-25T07:55:13Z] [iter=26] HEARTBEAT target_type=call_site elapsed_min=43.8 files_done=6 resolved=883 errors=223 current=crates/cli/src/plugins/prompt.rs
+[2026-09-25T08:37:28Z] [iter=26] HEARTBEAT target_type=call_site elapsed_min=86.1 files_done=7 resolved=1234 errors=505 current=crates/cli/tests/coverage/shared/doctor_tests.rs
+[2026-09-25T09:14:45Z] [iter=26] HEARTBEAT target_type=call_site elapsed_min=123.3 files_done=8 resolved=2488 errors=755 current=crates/core/tests/unit/codec/openai_chat_tests.rs
+[2026-09-25T09:37:06Z] [iter=26] HEARTBEAT target_type=call_site elapsed_min=145.7 files_done=9 resolved=3021 errors=905 current=crates/python/src/py_types/core.rs
+[2026-09-25T09:45:20Z] [iter=26] HEARTBEAT target_type=call_site elapsed_min=153.9 files_done=10 resolved=3159 errors=960 current=crates/python/tests/coverage/py_api_coverage_tests.rs
+[2026-09-25T10:02:23Z] [iter=26] HEARTBEAT target_type=call_site elapsed_min=171.0 files_done=11 resolved=3743 errors=1074 current=crates/adaptive/src/tool_parallelism_learner.rs
+[2026-09-25T10:03:16Z] [iter=26] HEARTBEAT target_type=call_site elapsed_min=171.9 files_done=12 resolved=3807 errors=1080 current=crates/core/tests/integration/api_surface_tests.rs
+[2026-09-25T10:58:36Z] [iter=26] HEARTBEAT target_type=call_site elapsed_min=227.2 files_done=13 resolved=4701 errors=1451 current=crates/adaptive/tests/unit/response_cache/key_tests.rs
+[2026-09-25T11:11:28Z] [iter=26] CHECKPOINT TRIGGERED elapsed_min=240.0 files_completed=146 new_files_this_iter=13 mem_mb=4765 MB
+[2026-09-25T11:11:28Z] [iter=26] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/50f377b3052df3e3394d87f3f1a3ccb251bcab12.nq.gz triples=777196
+[2026-09-25T11:11:36Z] [iter=26] Checkpoint written, exiting with code 7
+[2026-09-25T11:11:36Z] [iter=26] PHASE END: enrich (checkpointed) elapsed_s=14403 elapsed_min=240.0 files_completed=146

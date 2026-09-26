@@ -1,0 +1,38 @@
+[2026-09-26T07:07:56Z] === ENRICH ITERATION 29 START | repo=NVIDIA/NeMo-Relay sha=50f377b3 ===
+[2026-09-26T07:07:56Z] [iter=29] PHASE START: enrich repo=NVIDIA/NeMo-Relay sha=50f377b3 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/50f377b3-enrich-iter-029.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/50f377b3052df3e3394d87f3f1a3ccb251bcab12.nq.gz
+[2026-09-26T07:08:13Z] [iter=29] Step 1: Loading AST into disk-backed store mem_mb=83 MB
+[2026-09-26T07:12:19Z] [iter=29] AST store loaded triples=20902930 load_secs=239 mem_mb=1131 MB
+[2026-09-26T07:12:19Z] [iter=29] Step 2: Finding LSP targets mem_mb=1131 MB
+[2026-09-26T07:12:57Z] [iter=29] LSP targets found call_sites=235797 imports=0 extends=1 implements=207 secs=38
+[2026-09-26T07:13:35Z] [iter=29] Loaded checkpoint partial graph triples=836765
+[2026-09-26T07:13:53Z] [iter=29] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=2485 MB
+[2026-09-26T07:16:03Z] [iter=29] Position index built positions=1396491 nodes_with_types=1768633 secs=130 mem_mb=4984 MB
+[2026-09-26T07:16:03Z] [iter=29] Step 3: Starting LSP resolution mem_mb=4984 MB already_completed_types=[] already_completed_files=170
+[2026-09-26T07:16:03Z] [iter=29] Resolving target type target_type=call_site count=235797
+[2026-09-26T07:17:05Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=9.2 files_done=0 resolved=0 errors=0 current=crates/core/tests/unit/codec/openai_responses_tests.rs
+[2026-09-26T07:32:36Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=24.7 files_done=1 resolved=6 errors=118 current=crates/core/src/observability/plugin_component.rs
+[2026-09-26T08:35:50Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=87.9 files_done=2 resolved=1184 errors=646 current=crates/cli/src/plugins/mod.rs
+[2026-09-26T08:45:53Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=98.0 files_done=3 resolved=1338 errors=730 current=crates/adaptive/tests/unit/response_cache/tool_tests.rs
+[2026-09-26T08:52:06Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=104.2 files_done=4 resolved=1545 errors=782 current=crates/cli/src/plugins/lifecycle/environment.rs
+[2026-09-26T08:56:56Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=109.0 files_done=5 resolved=1727 errors=822 current=crates/core/tests/unit/codec/oci_genai_tests.rs
+[2026-09-26T09:27:49Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=139.9 files_done=6 resolved=2276 errors=1080 current=crates/ffi/src/api/llm.rs
+[2026-09-26T09:37:39Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=149.7 files_done=7 resolved=2376 errors=1162 current=crates/ffi/src/api/event_registry.rs
+[2026-09-26T09:45:18Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=157.4 files_done=8 resolved=2395 errors=1226 current=crates/core/tests/unit/codec/parity_tests.rs
+[2026-09-26T09:55:57Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=168.0 files_done=9 resolved=2647 errors=1315 current=crates/core/tests/unit/skill_load_tests.rs
+[2026-09-26T09:57:45Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=169.8 files_done=10 resolved=2737 errors=1330 current=crates/ffi/tests/integration/callable_extra_tests.rs
+[2026-09-26T10:05:03Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=177.1 files_done=11 resolved=2872 errors=1391 current=crates/core/src/observability/atof.rs
+[2026-09-26T10:15:10Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=187.2 files_done=12 resolved=3111 errors=1475 current=crates/core/tests/unit/codec/streaming_tests.rs
+[2026-09-26T10:17:12Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=189.3 files_done=13 resolved=3151 errors=1492 current=crates/adaptive/src/response_cache/mark.rs
+[2026-09-26T10:18:02Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=190.1 files_done=14 resolved=3204 errors=1499 current=crates/cli/tests/coverage/daemon/client_tests.rs
+[2026-09-26T10:22:50Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=194.9 files_done=15 resolved=3420 errors=1538 current=crates/cli/src/agents/claude/host.rs
+[2026-09-26T10:27:08Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=199.2 files_done=16 resolved=3522 errors=1574 current=crates/adaptive/tests/integration/response_cache_common.rs
+[2026-09-26T10:27:44Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=199.8 files_done=17 resolved=3531 errors=1579 current=crates/cli/src/installation/marketplace/state.rs
+[2026-09-26T10:32:09Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=204.2 files_done=18 resolved=3635 errors=1616 current=crates/adaptive/tests/integration/redis_tests.rs
+[2026-09-26T10:41:47Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=213.9 files_done=19 resolved=3791 errors=1696 current=crates/python/src/py_storage.rs
+[2026-09-26T10:48:49Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=220.9 files_done=20 resolved=3941 errors=1754 current=crates/cli/src/sessions/routing.rs
+[2026-09-26T10:52:39Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=224.7 files_done=21 resolved=3984 errors=1786 current=crates/cli/src/filesystem/atomic.rs
+[2026-09-26T10:54:13Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=226.3 files_done=22 resolved=4090 errors=1799 current=crates/cli/src/daemon/worker/managed.rs
+[2026-09-26T11:08:28Z] [iter=29] CHECKPOINT TRIGGERED elapsed_min=240.5 files_completed=192 new_files_this_iter=22 mem_mb=5001 MB
+[2026-09-26T11:08:28Z] [iter=29] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/50f377b3052df3e3394d87f3f1a3ccb251bcab12.nq.gz triples=876775
+[2026-09-26T11:08:36Z] [iter=29] Checkpoint written, exiting with code 7
+[2026-09-26T11:08:36Z] [iter=29] PHASE END: enrich (checkpointed) elapsed_s=14432 elapsed_min=240.5 files_completed=192
